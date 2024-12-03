@@ -50,5 +50,6 @@ public class TicketService {
             showseat.setStatus(ShowSeatStatus.LOCKED);
             showSeatsSaved.add(showSeatRepository.save(showseat));
         }
+        return showSeatsSaved;
     }
 }
